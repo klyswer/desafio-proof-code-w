@@ -1,0 +1,77 @@
+.w_barra{
+  width: 50%;
+}
+
+.input_barra {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-radius: 50px !important;
+  height: 35px;
+}
+
+.input_barra:focus {
+  border-color: gray;
+  box-shadow: 0 0 2px 0 gray;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 35px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+.w_spinner .spinner-border, .w_spinner .spinner{
+  width: 20px;
+  height: 20px;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 1px;
+  top: 5px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+.w_barra_mobile{
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+}
+@media (max-width: 992px) {
+  .w_barra{
+    display: none;
+  }
+  .w_barra_mobile{
+    width: 60%;
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 1200px) {}

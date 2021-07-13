@@ -1,0 +1,60 @@
+.p_14{
+  padding: 14px;
+}
+.min_h58{
+  min-height: 58px;
+}
+.bg_pr {
+background: #0071ce;
+}
+
+.carousel{
+  margin-top: 64px !important;
+}
+.carousel-indicators li{
+  width: 12px !important;
+  height: 12px !important;
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+  border-radius: 50px !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.cursor_pointer{
+  cursor: pointer;
+}
+
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  z-index: 10;
+  margin-bottom: auto;
+}
+
+/* sombreado del focus */
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 1.5px;
+}
+
+/* centrar texto del togle en responsive*/
+.navbar-collapse{
+  text-align:center;
+}
+
+.navbar-brand {
+  margin-right: 10px;
+  height: 100%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* .m_l_tmño_grnde{
+    margin-right: 16px;
+  } */
+}
+
+@media (min-width: 1200px) {
+  /* .m_l_tmño_grnde{
+    margin-right: 16px;
+  }  */
+}

@@ -1,0 +1,38 @@
+.default_btn_header{
+  border: none;
+  border-radius: 3px;
+}
+.contenido_btn{
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido_btn span{
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.bg_dark{
+  background-color: #041e42;
+}
+.bg_greensy{
+  background-color: #45ab19;
+}
+
+/* ------------CANTIDAD PRODUCTOS CSS-------------- */
+.cantidad_productos{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ffc220;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #06568f;
+}
