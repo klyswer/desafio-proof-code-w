@@ -9,6 +9,9 @@ import ItemHeader from "../../atomos/itemHeader.jsx/ItemHeader";
 import './Header.css';
 
 const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
+
+  
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg_pr position-fixed top-0 w-100 min_h58">
@@ -23,15 +26,7 @@ const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
           />
 
           <BarraBusqueda habilitado={isFetchLista.length > 0} isMobile actionFilter={realizarBusqueda} restaurarLista={reanudarLista} />
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
 
