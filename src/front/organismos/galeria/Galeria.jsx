@@ -24,7 +24,7 @@ const Galeria = ({listaProductos=[]}) => {
 
 
 Galeria.propTypes = {
-  listaProductos:PropTypes.arrayOf(PropTypes.object).isRequired
+  listaProductos:PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 

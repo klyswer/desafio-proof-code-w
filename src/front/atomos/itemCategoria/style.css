@@ -1,0 +1,18 @@
+.item_default_categoria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column wrap;
+}
+.item_default_categoria:hover{
+  border-bottom: orange 3px solid;
+}
+.item_activo{
+border-bottom: orange 3px solid;
+}
+.icon_categoria{
+
+}
+.texto_categoria{
+
+}

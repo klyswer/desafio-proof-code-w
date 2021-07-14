@@ -1,17 +1,17 @@
 
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons'
 import BarraBusqueda from "../../atomos/barraBusqueda/BarraBusqueda";
-// import { filtrarBarraAction, renudarListSelectAction } from "../galery/GaleryAction";
 import ItemHeader from "../../atomos/itemHeader.jsx/ItemHeader";
+import Categorias from "../categorias/Categorias";
 import './Header.css';
 
 const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
 
+  const { listaCategorias } = useSelector((store)=> store.galeria);
   
-
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg_pr position-fixed top-0 w-100 min_h58">
@@ -38,17 +38,10 @@ const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
           </div>
         </div>
       </nav>
+      <Categorias listaCategorias={listaCategorias} />
     </>
   );
 }
 
-// const mapStateToProps = state =>({
-//   isFetchLista: state.galery.listRoot, 
-// });
 
-// const mapDispatchToProps = (dispatch)=> ({
-//   realizarBusqueda: (estado) => dispatch(filtrarBarraAction(estado)),
-//   reanudarLista: () => dispatch(renudarListSelectAction()),
-// })
-
-export default connect(null, null)(Header);
+export default Header;
