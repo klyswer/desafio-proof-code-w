@@ -1,5 +1,5 @@
 const initialState = {
-  products:{
+  apis:{
     list:[],
     discount:[]
   },

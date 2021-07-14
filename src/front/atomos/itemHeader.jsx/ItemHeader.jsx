@@ -27,16 +27,16 @@ const ItemHeader = ({icono,title,action,cssCont,cssBtn,tipoCart}) => {
 
 
 ItemHeader.defaultProps = {
-  icono:'',
+  icono:null,
   title:'',
-  action:'',
+  action:()=>null,
   cssCont:'',
   cssBtn:'',
   tipoCart:false
 }
 
 ItemHeader.propTypes = {
-  icono:PropTypes.elementType,
+  icono:PropTypes.element,
   title:PropTypes.string,
   action:PropTypes.func,
   cssCont:PropTypes.string,

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-// import rootReducerA from '../domain/band/bandReducer';
+import GaleryReducer from '../front/templates/GaleriaReducer';
 
 const rootReducer = combineReducers({
-  nombreEntidad: {},
+  galeria: GaleryReducer,
 });
 
 export default rootReducer;

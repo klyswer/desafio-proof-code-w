@@ -1,0 +1,23 @@
+.caja_texto_cards {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: #79778c;
+  letter-spacing: -0.1px;
+  margin: 0px 15px;
+  line-height: 20px;
+}
+
+.circle_item {
+  color: transparent;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.line_head{
+  border-top: 2px solid whitesmoke;
+}

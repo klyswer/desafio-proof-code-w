@@ -3,3 +3,7 @@
 *{
   font-family: heebo, sans-serif !important;
 }
+
+.bg_default, html{
+  background-color:#f5f5f5;
+}
