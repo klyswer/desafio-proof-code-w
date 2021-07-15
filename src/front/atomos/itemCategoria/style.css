@@ -1,17 +1,42 @@
 .item_default_categoria{
+  padding: 6px;
+  max-width: 105px;
+  min-width: 87px;
+  height: 60px;
+  font-size: 12px;
+  color: rgb(65, 64, 66);
+}
+.contenedor_elm_categoria{
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
-  flex-direction: column wrap;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: inherit;
+  padding-top: 4px;
+  transition: none 0s ease 0s;
 }
 .item_default_categoria:hover{
-  border-bottom: orange 3px solid;
+  border-bottom: 4px solid rgb(255, 194, 32);
+  color: rgb(0, 113, 206);
+  cursor: pointer;
 }
 .item_activo{
-border-bottom: orange 3px solid;
+  border-bottom: 4px solid rgb(255, 194, 32);
+  font-weight: bold;
+  color: rgb(0, 113, 206);
 }
 .icon_categoria{
 
+}
+.icon_categoria img{
+  width: 26px;
+}
+.contenedor_elm_categoria:hover img{
+  filter: invert(26%) sepia(53%) saturate(2500%) hue-rotate(
+    193deg
+    ) brightness(80%) contrast(102%);
 }
 .texto_categoria{
 

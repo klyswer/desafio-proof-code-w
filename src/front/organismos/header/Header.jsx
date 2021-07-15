@@ -1,16 +1,15 @@
 
 import React from "react";
-import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons'
 import BarraBusqueda from "../../atomos/barraBusqueda/BarraBusqueda";
 import ItemHeader from "../../atomos/itemHeader.jsx/ItemHeader";
-import Categorias from "../categorias/Categorias";
+
 import './Header.css';
 
 const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
 
-  const { listaCategorias } = useSelector((store)=> store.galeria);
+  
   
   return (
     <>
@@ -38,7 +37,6 @@ const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
           </div>
         </div>
       </nav>
-      <Categorias listaCategorias={listaCategorias} />
     </>
   );
 }
