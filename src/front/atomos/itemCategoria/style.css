@@ -19,17 +19,17 @@
 }
 .item_default_categoria:hover{
   border-bottom: 4px solid rgb(255, 194, 32);
-  color: rgb(0, 113, 206);
+  color: #0071ce;
   cursor: pointer;
 }
 .item_activo{
   border-bottom: 4px solid rgb(255, 194, 32);
   font-weight: bold;
-  color: rgb(0, 113, 206);
+  color: #0071ce;
 }
-.icon_categoria{
+/* .icon_categoria{
 
-}
+} */
 .icon_categoria img{
   width: 26px;
 }
