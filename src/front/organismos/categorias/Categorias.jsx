@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ItemCategoria from '../../atomos/itemCategoria/ItemCategoria';
 import './style.css';
 
-const Categorias = ({listaCategorias=[]}) => {
+const Categorias = ({listaCategorias}) => {
   return (
     listaCategorias !== [] ? (
       <div className="container_categorias">
@@ -26,6 +26,5 @@ const Categorias = ({listaCategorias=[]}) => {
 Categorias.propTypes = {
   listaCategorias:PropTypes.arrayOf(PropTypes.object).isRequired,
 };
-
 
 export default Categorias;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const CardGaleria = ({src,descripcion,precio,id,marca}) => {
+const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
   return (
     <div cat={marca}>
       <div id={id} className="card h-100">
@@ -14,13 +14,13 @@ const CardGaleria = ({src,descripcion,precio,id,marca}) => {
           <p className="card-text caja_texto_cards text-center">
             {descripcion}
           </p>
-          {/* Modal */}
         </div>
         <div className="card-footer">
           <div className="d-flex justify-content-center align-items-center">
             <div className="circle_item active_item" />
             <span className="precio_color">{`$${Math.round(precio*1.19)}`}</span>
           </div>
+          <button type="button" onClick={agregarProducto}>Agregar</button>
         </div>
       </div>
     </div> 
@@ -34,6 +34,7 @@ CardGaleria.propTypes = {
   precio:PropTypes.number.isRequired,
   id:PropTypes.number.isRequired,
   marca:PropTypes.string.isRequired,
+  agregarProducto: PropTypes.func.isRequired
 };
 
 

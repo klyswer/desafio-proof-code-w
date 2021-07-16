@@ -1,16 +1,20 @@
 
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons'
 import BarraBusqueda from "../../atomos/barraBusqueda/BarraBusqueda";
 import ItemHeader from "../../atomos/itemHeader.jsx/ItemHeader";
-
+import { verCarritoAction } from "../carrito/CarritoAction";
 import './Header.css';
 
-const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
 
-  
-  
+
+const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
+  const dispatch = useDispatch();
+  const { showCart } = useSelector((store)=> store.carrito);
+  const verCarrito = ()=>dispatch(verCarritoAction(!showCart));
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg_pr position-fixed top-0 w-100 min_h58">
@@ -33,7 +37,7 @@ const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
             <ItemHeader title=' Categorías' cssBtn='bg_dark p_14' icono={<FontAwesomeIcon icon={faBars} />} /> 
             <BarraBusqueda habilitado={isFetchLista.length > 0} isMobile={false} actionFilter={realizarBusqueda} restaurarLista={reanudarLista} />       
             <ItemHeader title=' Supermercado' cssCont="me-2" cssBtn='bg_greensy p_14' icono={<FontAwesomeIcon icon={faShoppingCart} />} />
-            <ItemHeader tipoCart cssBtn='bg_dark' /> 
+            <ItemHeader handleClickCart={verCarrito} tipoCart cssBtn='bg_dark' /> 
           </div>
         </div>
       </nav>

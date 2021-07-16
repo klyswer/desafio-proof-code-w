@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Contador from './Contador';
 import './style.css';
 
-const ItemHeader = ({icono,title,action,cssCont,cssBtn,tipoCart}) => {
+const ItemHeader = ({icono,title,action,cssCont,cssBtn,tipoCart,handleClickCart}) => {
   return (
     <div className={`nav-item ${cssCont!==''?cssCont:''}`}>
       <button type="button" className={`nav-link default_btn_header ${cssBtn!==''?cssBtn:''}`} onClick={action}>
@@ -14,10 +14,10 @@ const ItemHeader = ({icono,title,action,cssCont,cssBtn,tipoCart}) => {
               {title}
             </div>
           ):(
-            <div className="d-flex justify-content-center aling-items-center">            
+            <button type="button" className="d-flex justify-content-center aling-items-center btn_transparent" onClick={handleClickCart}>            
               <img height="25px" className="d-inline-block align-top" src={`${process.env.PUBLIC_URL}/images/lider-cart.svg`} alt="Lider-icon" />
               <Contador number={10} />
-            </div>
+            </button>
           )
         }
       </button>
@@ -32,7 +32,8 @@ ItemHeader.defaultProps = {
   action:()=>null,
   cssCont:'',
   cssBtn:'',
-  tipoCart:false
+  tipoCart:false,
+  handleClickCart:()=>null,
 }
 
 ItemHeader.propTypes = {
@@ -41,7 +42,8 @@ ItemHeader.propTypes = {
   action:PropTypes.func,
   cssCont:PropTypes.string,
   cssBtn:PropTypes.string,
-  tipoCart:PropTypes.bool
+  tipoCart:PropTypes.bool,
+  handleClickCart:PropTypes.func
 };
 
 
