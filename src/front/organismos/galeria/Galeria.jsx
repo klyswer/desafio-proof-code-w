@@ -22,7 +22,7 @@ const Galeria = ({listaProductos=[]}) => {
       <div className="row">
         {
           listaProductos.map((elm) => (
-            <div key={parseInt(elm.id,10)*Math.random()} className="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div key={parseInt(elm.id,10)*Math.random()} className="col-sm-6 col-md-4 col-lg-3 mt-4 card_galeria">
               <CardGaleria marca={elm.brand} id={elm.id} src={elm.image} descripcion={elm.description} precio={elm.price} agregarProducto={()=>handleClick(elm)} />
             </div>
             )

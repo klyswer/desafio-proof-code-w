@@ -10,7 +10,6 @@
   margin: 0px 15px;
   line-height: 20px;
 }
-
 .circle_item {
   color: transparent;
   width: 10px;
@@ -19,5 +18,39 @@
   margin-right: 5px;
 }
 .line_head{
-  border-top: 2px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+}
+.card_mod{
+  border: none;
+  border-radius: 20px;
+}
+.card_mod:hover{
+  box-shadow: 0 0 12px 0 #bbb;
+  transition: all .4s ease-in-out 0s;
+}
+.card_mod img{
+  padding: 18px;
+}
+.card_foot_mod{
+  border-radius: 0 0 20px 20px !important;
+  background-color: white;
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-bottom: 14px;
+}
+.card_foot_mod button{
+  width: 145px;
+  height: 32px;
+  border-radius: 23px;
+  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 25%);
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: .4px;
+  color: #0071ce;
+  border: none;
 }

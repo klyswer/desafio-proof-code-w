@@ -12,7 +12,7 @@ import './Header.css';
 
 const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
   const dispatch = useDispatch();
-  const { showCart } = useSelector((store)=> store.carrito);
+  const { showCart, listaProductoSelects } = useSelector((store)=> store.carrito);
   const verCarrito = ()=>dispatch(verCarritoAction(!showCart));
 
   return (
@@ -37,7 +37,7 @@ const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {
             <ItemHeader title=' Categorías' cssBtn='bg_dark p_14' icono={<FontAwesomeIcon icon={faBars} />} /> 
             <BarraBusqueda habilitado={isFetchLista.length > 0} isMobile={false} actionFilter={realizarBusqueda} restaurarLista={reanudarLista} />       
             <ItemHeader title=' Supermercado' cssCont="me-2" cssBtn='bg_greensy p_14' icono={<FontAwesomeIcon icon={faShoppingCart} />} />
-            <ItemHeader handleClickCart={verCarrito} tipoCart cssBtn='bg_dark' /> 
+            <ItemHeader numberItems={listaProductoSelects!==[]?listaProductoSelects.length:0} handleClickCart={verCarrito} tipoCart cssBtn='bg_dark' /> 
           </div>
         </div>
       </nav>

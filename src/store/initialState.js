@@ -19,15 +19,10 @@ const initialState = {
       {d:14,title:'Automóvil',icon:'automoviles.svg',active:false},
       {d:15,title:'Cuidado',icon:'belleza.svg',active:false},
     ],
-
   },
   Cart:{
     showCart:false,
-    listaProductoSelects: []
-      // {id:1,src:"www.lider.cl/catalogo/images/catalogo_no_photo.jpg",nombre:"Televisión 54''",cantidad:1,precio:80000},
-      // {id:2,src:"www.lider.cl/catalogo/images/catalogo_no_photo.jpg",nombre:"Microondas 120W",cantidad:1,precio:40000},
-      // {id:3,src:"www.lider.cl/catalogo/images/catalogo_no_photo.jpg",nombre:"Horno Gas Premium",cantidad:1,precio:30000},
-    // ],
+    listaProductoSelects:[],
   }
 
 };

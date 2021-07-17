@@ -5,7 +5,7 @@ import './style.css';
 const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
   return (
     <div cat={marca}>
-      <div id={id} className="card h-100">
+      <div id={id} className="card card_mod h-100">
 
         <img src={src!==''&& `https://${src}`} className="card-img-top tamaño_imagenes" alt={descripcion} />
 
@@ -14,12 +14,12 @@ const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
           <p className="card-text caja_texto_cards text-center">
             {descripcion}
           </p>
-        </div>
-        <div className="card-footer">
           <div className="d-flex justify-content-center align-items-center">
             <div className="circle_item active_item" />
-            <span className="precio_color">{`$${Math.round(precio*1.19)}`}</span>
+            <span className="precio_color">{`$${precio}`}</span>
           </div>
+        </div>
+        <div className="card-footer card_foot_mod">
           <button type="button" onClick={agregarProducto}>Agregar</button>
         </div>
       </div>
