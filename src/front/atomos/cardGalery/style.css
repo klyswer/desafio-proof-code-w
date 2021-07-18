@@ -54,3 +54,8 @@
   color: #0071ce;
   border: none;
 }
+.card_foot_mod button:hover{
+  box-shadow: rgb(182 182 182) -1px 2px 8px;
+  transform: scale(1.06);
+  transition: box-shadow 0.1s ease-in-out 0s, transform 0.1s ease-in-out 0s;
+}

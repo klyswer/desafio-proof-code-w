@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const ItemSelect = ({src,nombre,cantidad,precio}) => {
+const ItemSelect = ({id,src,nombre,cantidad,precio,handleEliminar}) => {
   return (
     <div className="item_default_select">
       <div className="">
@@ -18,6 +18,7 @@ const ItemSelect = ({src,nombre,cantidad,precio}) => {
         <div className="">
           {precio}
         </div>
+        <button type="button" name={id} onClick={handleEliminar}>Eliminar</button>
       </div>
     </div>
   );
@@ -31,10 +32,12 @@ ItemSelect.defaultProps = {
 }
 
 ItemSelect.propTypes = {
+  id:PropTypes.number.isRequired,
   src:PropTypes.string,
   nombre:PropTypes.string,
   cantidad:PropTypes.number,
-  precio:PropTypes.number
+  precio:PropTypes.number,
+  handleEliminar: PropTypes.func.isRequired
 };
 
 export default ItemSelect;

@@ -34,7 +34,7 @@ ItemHeader.defaultProps = {
   cssBtn:'',
   tipoCart:false,
   handleClickCart:()=>null,
-  numberItems:[]
+  numberItems:0
 }
 
 ItemHeader.propTypes = {

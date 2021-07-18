@@ -9,7 +9,7 @@ const Categorias = ({listaCategorias}) => {
       <div className="container_categorias">
         {
           listaCategorias.map((elm) => (
-            <div key={elm.id} className="">
+            <div key={`${elm.id}${elm.title}`}>
               <ItemCategoria svg={elm.icon} title={elm.title} active={elm.active} />
             </div>
             )

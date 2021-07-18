@@ -15,7 +15,7 @@ const Inicio = () => {
 
   return (
     <>
-      <Header />
+      <Header isFetchLista={listaCategorias} />
       {showCart && (<Carrito handleCerrar={verCarrito} productosSelect={listaProductoSelects} />)}
       <Categorias listaCategorias={listaCategorias} />
       <ContainerGaleria />

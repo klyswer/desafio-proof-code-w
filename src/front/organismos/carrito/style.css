@@ -1,9 +1,57 @@
+/* -----------------CARRITO----------------------------- */
 .carrito_contenedor{
   position: fixed;
   display: flex;
+  flex-direction: column;
   right: 0;
   z-index: 101;
   border-radius: 8px;
   background-color: #fff;
-  min-width: 315px;
+  min-width: 310px;
+  box-shadow: 0 2px 4px 0 rgba(46,34,34,.5);
+  max-height: 460px;
+  padding: 0px 4px;
 }
+.productos_select_container{
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  max-height: 280px;
+  overflow-x: none;
+  overflow-y: scroll;
+}
+.producto_select{
+  width: 100%;
+}
+/* -----------------BTN (X)----------------------------- */
+.btn_cerrar_container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn_cerrar_container button{
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  transform: scaleX(1.5);
+  padding: 0.5rem;
+}
+/* -----------------PROMOCIONES----------------------------- */
+.promocion_container{
+  font-size: 15px;
+  font-weight: 500;
+  color: #0071ce;
+}
+/* ---------------------SUBTOTAL------------------------- */
+.sub_total_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Sub_total_title, .sub_total_value{
+  color: #ababab;
+  font-size: 15px;
+}
+/* ---------------------DESCUENTO APLICADO------------------------- */
+
+/* ---------------------TOTAL------------------------- */

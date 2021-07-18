@@ -12,8 +12,8 @@ export const agregarProductoAction = (elm)=> {
   };
 }
 
-export const eliminarProductoAction = (elm)=> {
+export const eliminarProductoAction = (id)=> {
   return dispatch => {
-    dispatch({type: CarritoTypes.DECREASE_PRODUCT, payload: elm });
+    dispatch({type: CarritoTypes.DECREASE_PRODUCT, payload: id });
   };
 }

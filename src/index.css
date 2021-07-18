@@ -7,3 +7,29 @@
 .bg_default, html{
   background-color:#f5f5f5;
 }
+
+/* SCROLL SCROLLBAR: AGREGA ESTA CLASE Y PODRÁS USAR NUESTRO SCROLLBAR scrollBar_agnes */
+
+.scrollBar_agnes::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+.scrollBar_agnes::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 15px;
+}
+.scrollBar_agnes::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.scrollBar_agnes::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+.scrollBar_agnes::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 15px;
+}
+.scrollBar_agnes::-webkit-scrollbar-track:hover,
+.scrollBar_agnes::-webkit-scrollbar-track:active {
+background: #d4d4d4;
+}

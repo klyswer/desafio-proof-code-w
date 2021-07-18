@@ -11,14 +11,13 @@ const CarritoReducer = (state = initialState.Cart, action) => {
       };
     case CarritoTypes.ADD_PRODUCT:
       return { 
-        ...state, 
-        // listaProductoSelects: [...state, action.payload]
+        ...state,
         listaProductoSelects: state.listaProductoSelects.concat(action.payload)
       };
     case CarritoTypes.DECREASE_PRODUCT:
       return { 
         ...state, 
-        listaProductoSelects: state.listaProductoSelects.filter( elm => elm.id !== action.payload.id) 
+        listaProductoSelects: state.listaProductoSelects.filter( elm => elm.id !== parseInt(action.payload,10) ) 
       };
     default:
       return state;
