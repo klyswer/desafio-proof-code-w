@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import PropTypes from "prop-types";
 import Galeria from "../organismos/galeria/Galeria";
 import { getAllProductsAction } from "./GaleriaAction";
+import { getAllDiscountsAction } from "../organismos/carrito/CarritoAction";
 import Cargando from '../atomos/spinner/Cargando';
 import "./style.css";
-
 
 
 // const lista=[
@@ -46,6 +46,7 @@ const ContainerGaleria = ({ title }) => {
 
   useEffect(() => {
     dispatch(getAllProductsAction());
+    dispatch(getAllDiscountsAction())
   }, []);
 
   return (

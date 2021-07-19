@@ -12,24 +12,6 @@ export const getAllProductsAction = () => {
   };
 };
 
-// export const filtrarProductsAction = (cat) =>{
-//   return dispatch => {
-//     dispatch({ type: GaleryTypes.FILTRAR_LISTA, cat });
-//   };
-// };
-
-// export const filtrarProductsSubCatAction = (subCat) =>{
-//   return dispatch => {
-//     dispatch({ type: GaleryTypes.FILTRAR_LISTA_SUBCAT, subCat });
-//   };
-// };
-
-// export const filtrarBarraAction = (title) =>{
-//   return dispatch => {
-//     dispatch({ type: GaleryTypes.FILTRAR_LISTA_BARRA, title });
-//   }
-// };
-
 export const renudarListSelectAction = () =>{
   return dispatch => {
     dispatch({ type: 'restaurarlista' });

@@ -11,7 +11,7 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
 
   const handleRemover = (e)=>{
     const {name}=e.target;
-    // alert(name);
+    // alert(id)
     dispatch(eliminarProductoAction(name))
   }
 
@@ -23,8 +23,8 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
       {productosSelect.length > 0 ? (
         <div className="productos_select_container scrollBar_agnes">
           {productosSelect.map((elm) => (
-            <div key={elm.id} className="producto_select">
-              <ItemSelect id={elm.id} src={elm.image} nombre={elm.description} cantidad={elm.cantidad} precio={elm.price} handleEliminar={handleRemover} />
+            <div key={elm._id} className="producto_select">
+              <ItemSelect id={elm._id} marca={elm.brand} src={elm.image} nombre={elm.description} cantidad={elm.cantidad} precio={elm.price} handleEliminar={handleRemover} />
             </div>
           ))}
         </div>

@@ -1,7 +1,6 @@
 const initialState = {
-  apis:{
+  galeria:{
     list:[],
-    discount:[],
     listaCategorias:[    
       {id:1,title:'Juguetería',icon:'jugueteria.svg',active:false},
       {id:2,title:'Mundo Bebé',icon:'bebe.svg',active:false},
@@ -21,8 +20,11 @@ const initialState = {
     ],
   },
   Cart:{
+    discount:[],
     showCart:false,
     listaProductoSelects:[],
+    subTotal: 0,
+    listaDescuentos:[],
   }
 
 };

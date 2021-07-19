@@ -1,7 +1,7 @@
 import initialState from "../../store/initialState";
 import GaleriaTypes from './GaleriaTypes';
 
-const GaleryReducer = (state = initialState.apis, action) => {
+const GaleryReducer = (state = initialState.galeria, action) => {
 
   switch (action.type) {
     case GaleriaTypes.GET_ALL_PRODUCTS:

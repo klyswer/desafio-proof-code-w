@@ -32,7 +32,7 @@ CardGaleria.propTypes = {
   src:PropTypes.string.isRequired,
   descripcion:PropTypes.string.isRequired,
   precio:PropTypes.number.isRequired,
-  id:PropTypes.number.isRequired,
+  id:PropTypes.string.isRequired,
   marca:PropTypes.string.isRequired,
   agregarProducto: PropTypes.func.isRequired
 };
