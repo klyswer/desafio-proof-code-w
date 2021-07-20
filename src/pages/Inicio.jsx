@@ -9,13 +9,13 @@ import ContainerGaleria from '../front/templates/ContainerGaleria';
 
 const Inicio = () => {
   const dispatch = useDispatch();
-  const { listaCategorias } = useSelector((store)=> store.galeria);
+  const { listaCategorias,list } = useSelector((store)=> store.galeria);
   const { showCart, listaProductoSelects, subTotal } = useSelector((store)=> store.carrito);
   const verCarrito = ()=>dispatch(verCarritoAction(false));
 
   return (
     <>
-      <Header isFetchLista={listaCategorias} />
+      <Header isFetchLista={list} />
       {showCart && (<Carrito subTotal={subTotal} handleCerrar={verCarrito} productosSelect={listaProductoSelects} />)}
       <Categorias listaCategorias={listaCategorias} />
       <ContainerGaleria />

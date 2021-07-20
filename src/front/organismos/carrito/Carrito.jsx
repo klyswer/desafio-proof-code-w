@@ -3,8 +3,8 @@ import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 import ItemSelect from "../../atomos/itemSelect/ItemSelect";
 import { eliminarProductoAction } from "./CarritoAction";
+import { agregarformatoPesos } from "../../../utils/FormatUtil";
 import "./style.css";
-
 
 const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) => {
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
         <button className="btn_cerrar" type="button" onClick={handleCerrar}>X</button>
       </div>
       {productosSelect.length > 0 ? (
-        <div className="productos_select_container scrollBar_agnes">
+        <div className="productos_select_container scroll_set scrollBar_agnes">
           {productosSelect.map((elm) => (
             <div key={elm._id} className="producto_select">
               <ItemSelect id={elm._id} marca={elm.brand} src={elm.image} nombre={elm.description} cantidad={elm.cantidad} precio={elm.price} handleEliminar={handleRemover} />
@@ -29,7 +29,7 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
           ))}
         </div>
       ) : (
-        <div className="productos_select_container">
+        <div className="vacio_select_container">
           <img src={`${process.env.PUBLIC_URL}/images/empty-cart.svg`} alt="carro vacío" />
           <h6>Tu carrito está vacío</h6>
         </div>
@@ -48,7 +48,19 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
               {'Subtotal de productos'}
             </div>
             <div className="sub_total_value">
-              {`$${subTotal}`}
+              {agregarformatoPesos(subTotal)}
+            </div>
+          </div>
+        )
+      }
+      {
+        !!subTotal && (
+          <div className="total_container">
+            <div className="total_title">
+              <strong>Total a pagar</strong>
+            </div>
+            <div className="total_value">
+              <strong>{agregarformatoPesos(subTotal)}</strong>
             </div>
           </div>
         )

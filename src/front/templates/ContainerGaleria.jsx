@@ -60,7 +60,6 @@ const ContainerGaleria = ({ title }) => {
             list.length > 0 ? (
               <Galeria listaProductos={list} />
             ) : (
-              // <h1>Buscando productos.</h1>
               <Cargando mensaje='Buscando productos...' girando />
             )
           }

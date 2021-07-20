@@ -1,3 +1,65 @@
 .item_default_select{
   width: 98%;
+  margin-bottom: 5px;
+}
+.item_default_select:hover{
+  cursor: pointer;
+}
+.contenedor_item_select{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 2px 0 rgb(0 0 0 / 2%);
+  padding-bottom: 12px;
+}
+/* --------------------Parte 1 item producto-------------------- */
+.icon_product{
+  margin: 0 12px;
+}
+.icon_product img{
+  width: 63px;
+  height: 63px;
+}
+.walmart_cantidad_item{
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 1px;
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #0071ce;
+  left: 52px;
+  top: 10px;
+}
+/* --------------------Parte 2 item producto-------------------- */
+.descript_product{
+  font-size: 12px;
+  transition: color .3s ease;
+  color: #464d69;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 130px;
+}
+/* --------------------Parte 3 item producto-------------------- */
+.precio_product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50px;
+  margin-top: 12px;
+}
+.precio_product div{
+  font-size: 12px;
+}
+.precio_product button{
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  color: #0071ce;
+  text-decoration: underline;
 }

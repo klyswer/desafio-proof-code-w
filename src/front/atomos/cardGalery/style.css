@@ -1,24 +1,21 @@
 .caja_texto_cards {
-  min-height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 300;
-  color: #79778c;
-  letter-spacing: -0.1px;
-  margin: 0px 15px;
-  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6d6e71;
+  line-height: 1.5rem;
 }
-.circle_item {
-  color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-  margin-right: 5px;
-}
+
 .line_head{
   border-top: 3px solid whitesmoke;
+  min-height: 180px;
+  padding: .5rem;
+}
+.container_card_texto{
+  font-size: 16px;
+  font-weight: 400;
+  color: #6d6e71;
+  line-height: 1.5rem;
+  margin-bottom: 8px;
 }
 .card_mod{
   border: none;
@@ -31,6 +28,17 @@
 .card_mod img{
   padding: 18px;
 }
+
+/* -------------Precio card------------ */
+.precio_card{
+  min-height: 50px;
+}
+.precio_card span{
+  font-size: 18px;
+  color: #565656;
+  font-weight: 700;
+}
+
 .card_foot_mod{
   border-radius: 0 0 20px 20px !important;
   background-color: white;

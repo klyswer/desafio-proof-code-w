@@ -17,6 +17,15 @@
   height: auto;
   min-height: 100px;
   max-height: 280px;
+}
+.vacio_select_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+.scroll_set{
   overflow-x: none;
   overflow-y: scroll;
 }
@@ -43,10 +52,11 @@
   color: #0071ce;
 }
 /* ---------------------SUBTOTAL------------------------- */
-.sub_total_container{
+.sub_total_container, .total_container{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 16px 12px 16px 0;
 }
 .Sub_total_title, .sub_total_value{
   color: #ababab;

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {agregarformatoPesos} from '../../../utils/FormatUtil';
 import './style.css';
 
 const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
@@ -9,14 +10,16 @@ const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
 
         <img src={src!==''&& `https://${src}`} className="card-img-top tamaño_imagenes" alt={descripcion} />
 
-        <div className="card-body pe-1 line_head">
-          <h6 className="card-title card_title">{descripcion}</h6>
-          <p className="card-text caja_texto_cards text-center">
-            {descripcion}
-          </p>
-          <div className="d-flex justify-content-center align-items-center">
-            <div className="circle_item active_item" />
-            <span className="precio_color">{`$${precio}`}</span>
+        <div className=" pe-1 line_head">
+          <div className="container_card_texto">
+            <div className="caja_texto_cards">
+              <strong>{`${marca} `}</strong> 
+              <span className="">{descripcion}</span>
+            </div>
+          </div>
+
+          <div className="precio_card">
+            <span>{agregarformatoPesos(precio)}</span>
           </div>
         </div>
         <div className="card-footer card_foot_mod">
