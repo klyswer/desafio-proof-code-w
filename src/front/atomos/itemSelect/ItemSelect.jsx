@@ -13,11 +13,14 @@ const ItemSelect = ({id,marca,src,nombre,cantidad,precio,handleEliminar}) => {
         </div>
         <div className="descript_product">
           <div className="">
+            <strong>{marca}</strong> 
+          </div> 
+          <div className="">
             {nombre}  
           </div>       
           <div className="">
-            {cantidad}
-          </div>        
+            <strong>{`Cantidad: ${cantidad}`}</strong>
+          </div>    
         </div>
 
         <div className="precio_product">
