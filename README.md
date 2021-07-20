@@ -4,7 +4,7 @@ A continuación presentamos el desafío de Walmart developer full stack usando: 
 
 
 
-### Para desplegar tu app sigue los siguientes pasos:
+### Para desplegar el app sigue los siguientes pasos:
 
 ### 0- CLONAR EL PROYECTO usando: 
 `git clone https://github.com/klyswer/desafio-walmart.git`
@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) desde la ruta podrás ver la
 
 
 
-### ..........COMANDOS ADICIONALES..........
+### __________________________ Comando adicionales __________________________
 
 ### CORRER LOS TEST UNITARIOS: 
 `npm test`
@@ -38,3 +38,14 @@ Este comando te permitirá ejecutar los test unitarios.<br>
 `npm run build`
 
 Este comando te permitirá ejecutar los test unitarios.<br>
+
+
+### .......... Otros detalles ..........
+Está dirección contiene el back de heroku con los dos Endpoints para consultar productos y descuentos:
+`https://walmart-back-quest.herokuapp.com/` puedes acceder a `/products` o `/discounts`<br>
+`https://walmart-back-quest.herokuapp.com/products`<br>
+`https://walmart-back-quest.herokuapp.com/discounts`<br>
+
+La BD esta en MongoAtlas.
+
+
