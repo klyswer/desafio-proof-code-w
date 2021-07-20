@@ -13,12 +13,12 @@ import './cargando.css';
 
 const Cargando = ({mensaje='', svg='', girando=false, css}) => {
   return (
-    <>
+    <div className="row mt-4">
       <div className={`container cargando_css ${!!css && css}`}>
         {svg && <img className={girando && 'anim_girar'} src={svg===''?svg:Icon} alt="icon" /> }
         <div className="text_component_carga">{mensaje}</div>
       </div>
-    </>
+    </div>
   );
 }
 

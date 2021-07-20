@@ -5,40 +5,64 @@ import Galeria from "../organismos/galeria/Galeria";
 import { getAllProductsAction } from "./GaleriaAction";
 import { getAllDiscountsAction } from "../organismos/carrito/CarritoAction";
 import Cargando from '../atomos/spinner/Cargando';
+import FiltroIzq from "../atomos/filtroIzq/FiltroIzq";
 import "./style.css";
 
+const lista=[
+  {
+    "id": '1krp',
+    "opcion": "Marca1",
+    "value":"Datos"
+  },
+  {
+    "id": '2kyp',
+    "opcion": "Marca1",
+    "value":"Datos"
+  },
+  {
+    "id": '3k45',
+    "opcion": "Marca1",
+    "value":"Datos"
+  },
+  {
+    "id": '4kgf',
+    "opcion": "Marca2",
+    "value":"Datos"
+  }
+];
 
-// const lista=[
-//   {
-//     "id": 1,
-//     "brand": "Marca1",
-//     "description": "Televisión 54''",
-//     "image": "www.lider.cl/catalogo/images/catalogo_no_photo.jpg",
-//     "price": 80000
-//   },
-//   {
-//     "id": 2,
-//     "brand": "Marca1",
-//     "description": "Microondas 120W",
-//     "image": "www.lider.cl/catalogo/images/catalogo_no_photo.jpg",
-//     "price": 40000
-//   },
-//   {
-//     "id": 3,
-//     "brand": "Marca1",
-//     "description": "Horno Gas Premium",
-//     "image": "www.lider.cl/catalogo/images/catalogo_no_photo.jpg",
-//     "price": 30000
-//   },
-//   {
-//     "id": 4,
-//     "brand": "Marca2",
-//     "description": "Refrigerador",
-//     "image": "www.lider.cl/catalogo/images/catalogo_no_photo.jpg",
-//     "price": 20000
-//   }
-// ];
-
+const lista2=[
+  {
+    "id": '1krp',
+    "opcion": "Marca1",
+    "value":"Datos"
+  },
+  {
+    "id": '2kyp',
+    "opcion": "Marca1",
+    "value":"Datos"
+  },
+  {
+    "id": '3k45',
+    "opcion": "Marca1",
+    "value":"Datos"
+  },
+  {
+    "id": '4kgf',
+    "opcion": "Marca2",
+    "value":"Datos"
+  },
+  {
+    "id": '5kdf',
+    "opcion": "Marca3",
+    "value":"Datos"
+  },
+  {
+    "id": '6kdf',
+    "opcion": "Marca4",
+    "value":"Datos"
+  }
+];
 
 const ContainerGaleria = ({ title }) => {
   const dispatch = useDispatch();
@@ -53,14 +77,19 @@ const ContainerGaleria = ({ title }) => {
     <div className="contenedor_galeria container-fluid bg_default">
       <div className="row">
         <div className="col-3 galeria_filter">
-          <h5 className="filtro_galeria">{title}</h5>
+          <div className="row mt-4 pad_left_12">
+            <FiltroIzq listaElm={lista} title={title} />
+            <FiltroIzq listaElm={lista2} title="Filtro por marca" />
+          </div>
         </div>
         <div className="col-9 galeria_items">
           {
             list.length > 0 ? (
               <Galeria listaProductos={list} />
             ) : (
-              <Cargando mensaje='Buscando productos...' girando />
+              <div className="row mt-4">
+                <Cargando mensaje='Buscando productos...' girando />
+              </div>
             )
           }
         </div>

@@ -73,7 +73,6 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
 Carrito.defaultProps = {
   promocion:[],
   subTotal:0,
-  // marca:''
 }
 
 Carrito.propTypes = {

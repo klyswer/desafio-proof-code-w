@@ -19,7 +19,7 @@ Abre la terminal y ejecuta: `npm install` o `yarn`
 <br>
 
 ### 3- RENDERIZA EN MODO DESARROLLO: 
-(`npm start` o `yarn start`)
+(`npm start` ó `yarn start`)
 
 Está orden levanta tu proyecto en modo desarrollo, tendrás conexión directa con el backend y la BD mongo.<br>
 
