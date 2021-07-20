@@ -3,7 +3,7 @@
 A continuación presentamos el desafío de Walmart developer full stack usando: JS, React, NodeJs, Express, y mongoDb (MERN). <br>
 
 App desplegada: acceda a este link (puede no estar en la última versión).
-`https://60f71f7c2319285e12b2fd40--kind-feynman-aaf93b.netlify.app/`<br>
+`https://kind-feynman-aaf93b.netlify.app/`<br>
 
 
 ### Para desplegar el app sigue los siguientes pasos:
