@@ -73,6 +73,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: .5rem;
+  padding: 0 .5rem;
 }
 
