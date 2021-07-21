@@ -1,22 +1,24 @@
-import React from 'react'
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import './BarraBusqueda.css';
 
-const BarraBusqueda = ({actionFilter, restaurarLista, isMobile, habilitado}) => {
+const BarraBusqueda = ({
+  // actionFilter, restaurarLista,
+   isMobile, habilitado}) => {
 
-  const handleWord=({value})=>{
-    if(!!value&& value!=="" && value.length > 1){
-      actionFilter(value.toUpperCase());
-    }else{
-      restaurarLista();
-    }
-  }
+  // const handleWord=({value})=>{
+  //   if(!!value&& value!=="" && value.length > 1){
+  //     actionFilter(value.toUpperCase());
+  //   }else{
+  //     restaurarLista();
+  //   }
+  // }
 
   return (
     <>
       <div className={`${!isMobile ? `w_barra` : `w_barra_mobile`} mx-auto inputWithIcon`}>
-        <input disabled={!habilitado} className="input_barra" type="text" placeholder="¿Que estas buscando?" onKeyUp={(e)=>handleWord(e.target)} />
+        <input disabled={!habilitado} className="input_barra" type="text" placeholder="¿Que estas buscando?"  />
         {
           habilitado ? (
             <i><FontAwesomeIcon className="iconoInput" icon={faSearch} /></i>

@@ -11,7 +11,7 @@ const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
 
         <img className="card-img-top tamaño_imagenes" src={src!==''&& `https://${src}`} alt={descripcion} />
 
-        <div className=" pe-1 line_head">
+        <div className="line_head">
           <div className="container_card_texto">
             <div className="caja_texto_cards">
               <strong>{`${marca} `}</strong> 
@@ -22,10 +22,11 @@ const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
           <div className="precio_card">
             <span>{agregarformatoPesos(precio)}</span>
           </div>
-          <div className="container_tipo_entrega">
-            <ItemTipoEntrega />
-            <ItemTipoEntrega tipo="retiro" texto="retiro" />
-          </div>
+
+        </div>          
+        <div className="container_tipo_entrega">
+          <ItemTipoEntrega />
+          <ItemTipoEntrega tipo="retiro" texto="retiro" />
         </div>
         <div className="card-footer card_foot_mod">
           <button type="button" onClick={agregarProducto}>Agregar</button>
