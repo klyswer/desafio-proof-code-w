@@ -3,16 +3,19 @@ import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 import ItemSelect from "../../atomos/itemSelect/ItemSelect";
 import { eliminarProductoAction } from "./CarritoAction";
-import { agregarformatoPesos } from "../../../utils/FormatUtil";
+import ItemPromocion from "../../atomos/promocion/ItemPromocion";
+import ItemDescuento from "../../atomos/descuento/ItemDescuento";
+import ItemSubTotal from "../../atomos/subTotal/ItemSubTotal";
+import ItemTotal from "../../atomos/total/ItemTotal";
 import "./style.css";
+
 
 const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) => {
   const dispatch = useDispatch();
-
-  const handleRemover = (e)=>{
-    const {name}=e.target;
-    // alert(id)
-    dispatch(eliminarProductoAction(name))
+  const {marca,acumulado,threshold,discount,promoAplica} = promocion;
+  
+  const handleRemover = (elm)=>{
+    dispatch(eliminarProductoAction(elm))
   }
 
   return (
@@ -20,11 +23,12 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
       <div className="btn_cerrar_container">
         <button className="btn_cerrar" type="button" onClick={handleCerrar}>X</button>
       </div>
+      {/* ----------- Detalle productos seleccionados ----------- */}
       {productosSelect.length > 0 ? (
         <div className="productos_select_container scroll_set scrollBar_agnes">
           {productosSelect.map((elm) => (
             <div key={elm._id} className="producto_select">
-              <ItemSelect id={elm._id} marca={elm.brand} src={elm.image} nombre={elm.description} cantidad={elm.cantidad} precio={elm.price} handleEliminar={handleRemover} />
+              <ItemSelect id={elm._id} marca={elm.brand} src={elm.image} nombre={elm.description} cantidad={elm.cantidad} precio={elm.price} handleEliminar={()=>handleRemover(elm)} />
             </div>
           ))}
         </div>
@@ -34,37 +38,14 @@ const Carrito = ({ productosSelect = [], handleCerrar, promocion, subTotal }) =>
           <h6>Tu carrito está vacío</h6>
         </div>
       )}
-      {
-        promocion.length > 0 && (
-          <div className="promocion_container">
-            {`Agrega $${<strong>{promocion.faltante}</strong>} más en productos ${promocion.marca} y aprovecha un descuento total de $${<strong>{promocion.descuento}</strong>} en tu compra!`}
-          </div>
-        )
-      }
-      {
-        !!subTotal && (
-          <div className="sub_total_container">
-            <div className="Sub_total_title">
-              {'Subtotal de productos'}
-            </div>
-            <div className="sub_total_value">
-              {agregarformatoPesos(subTotal)}
-            </div>
-          </div>
-        )
-      }
-      {
-        !!subTotal && (
-          <div className="total_container">
-            <div className="total_title">
-              <strong>Total a pagar</strong>
-            </div>
-            <div className="total_value">
-              <strong>{agregarformatoPesos(subTotal)}</strong>
-            </div>
-          </div>
-        )
-      }
+
+      { (promocion !==[] && !promoAplica && acumulado > 0 ) && (<ItemPromocion datosPromocion={promocion} />) }
+
+      { !!subTotal && (<ItemSubTotal subTotal={subTotal} />) }
+      
+      { promoAplica && (<ItemDescuento discount={discount} threshold={threshold} marca={marca} />) }
+
+      {!!subTotal && (<ItemTotal promoAplica={promoAplica} subTotal={subTotal} discount={discount} />)}
 
     </div>
   );

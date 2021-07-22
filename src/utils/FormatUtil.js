@@ -306,3 +306,25 @@ export const checkFileType = (file) =>{
   }
   return false;
 }
+
+
+
+
+    // const sumarPorMarca = (marca,listaSeleccionados)=>{
+    //   const sacarTotalPorMarca = listaSeleccionados.reduce((acumulador, valorActual) => {
+    //     const elementoYaExiste = acumulador.find(elemento => elemento.brand === valorActual.brand);
+    //     if (elementoYaExiste) {
+    //       return acumulador.map((elm) => {
+    //         if (elm.brand === valorActual.brand) {
+    //           return {
+    //             ...elm,
+    //             acumulado: elm.price + valorActual.price
+    //           }
+    //         }
+    //         return elm;
+    //       });
+    //     } 
+    //     return [...acumulador, valorActual];
+    //   }, []);
+    //   return sacarTotalPorMarca;
+    // }

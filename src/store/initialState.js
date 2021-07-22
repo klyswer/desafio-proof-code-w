@@ -24,7 +24,8 @@ const initialState = {
     showCart:false,
     listaProductoSelects:[],
     subTotal: 0,
-    listaDescuentos:[],
+    marcaSeleccionada:[],
+    datosPromoDescuento:[]
   }
 
 };

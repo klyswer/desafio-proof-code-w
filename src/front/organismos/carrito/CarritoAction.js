@@ -26,9 +26,16 @@ export const agregarProductoAction = (elm)=> {
   };
 }
 
-export const eliminarProductoAction = (id)=> {
+export const eliminarProductoAction = (elm)=> {
   return dispatch => {
-    dispatch({type: CarritoTypes.DECREASE_PRODUCT, payload: id });
+    dispatch({type: CarritoTypes.DECREASE_PRODUCT, payload: elm._id });
     dispatch({type: CarritoTypes.SET_SUBTOTAL }); // Action para calcular el subtotal.
+    dispatch({type:CarritoTypes.GET_DISCOUNTS, payload: elm.brand});
+  };
+}
+
+export const agregarDescuentoAcumuladoAction = (elm)=> {
+  return dispatch => {
+    dispatch({type: CarritoTypes.ADD_DESCOUNT_ACUM, payload: elm });
   };
 }

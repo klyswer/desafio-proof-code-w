@@ -44,7 +44,7 @@ ItemSelect.defaultProps = {
 }
 
 ItemSelect.propTypes = {
-  id:PropTypes.number.isRequired,
+  id:PropTypes.string.isRequired,
   src:PropTypes.string,
   nombre:PropTypes.string,
   cantidad:PropTypes.number,

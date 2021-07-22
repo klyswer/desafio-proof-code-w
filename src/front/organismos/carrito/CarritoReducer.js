@@ -34,7 +34,14 @@ const CarritoReducer = (state = initialState.Cart, action) => {
     case CarritoTypes.GET_DISCOUNTS:
       return {
         ...state, 
-        listaDescuentos: state.discount.filter( elm => elm.brand === action.payload)
+        marcaSeleccionada: state.discount.filter( elm => elm.brand === action.payload)
+      };    
+    case CarritoTypes.ADD_DESCOUNT_ACUM:
+      return {
+        ...state, 
+        // datosPromoDescuento: state.datosPromoDescuento.concat(action.payload)
+        // datosPromoDescuento: {...state.datosPromoDescuento, acumulado:action.payload}
+        datosPromoDescuento:action.payload
       };
     default:
       return state;
