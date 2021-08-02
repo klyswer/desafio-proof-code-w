@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Categorias /> Primer Snapshot: <Categorias /> 1`] = `
+<div
+  className="container_categorias"
+>
+  <div
+    key="1Juguetería"
+  >
+    <div
+      className="item_default_categoria false"
+    >
+      <div
+        className="contenedor_elm_categoria"
+      >
+        <div
+          className="icon_categoria"
+        >
+          <img
+            alt="Juguetería"
+            src="/images/jugueteria.svg"
+          />
+        </div>
+        <div
+          className="texto_categoria"
+        >
+          Juguetería
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    key="2Mundo Bebé"
+  >
+    <div
+      className="item_default_categoria false"
+    >
+      <div
+        className="contenedor_elm_categoria"
+      >
+        <div
+          className="icon_categoria"
+        >
+          <img
+            alt="Mundo Bebé"
+            src="/images/bebe.svg"
+          />
+        </div>
+        <div
+          className="texto_categoria"
+        >
+          Mundo Bebé
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
