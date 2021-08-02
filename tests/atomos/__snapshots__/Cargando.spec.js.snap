@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cargando /> Primer SnapShot: <Cargando /> 1`] = `
+<div
+  className="row mt-4"
+>
+  <div
+    className="container cargando_css clase_prueba"
+  >
+    <img
+      alt="icon"
+      className="anim_girar"
+      src={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        }
+      }
+    />
+    <div
+      className="text_component_carga"
+    >
+      Por favor, espere.
+    </div>
+  </div>
+</div>
+`;
