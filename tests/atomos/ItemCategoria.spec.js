@@ -24,7 +24,7 @@ describe('<ItemCategoria />', () => {
 
   test('Caso prueba 2: props "svg", recibe un "string" y renderiza un svg.', () => {
     const img = 'aire.svg';
-    const wrapper = shallow( <ItemCategoria svg={img} />);
+    const wrapper = shallow( <ItemCategoria svg={img} title="Perfumeria" />);
     const imgRender = wrapper.find('img').prop('src');
     
     expect(imgRender.includes(img)).toBe(true);

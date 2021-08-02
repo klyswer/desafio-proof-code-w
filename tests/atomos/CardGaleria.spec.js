@@ -10,7 +10,7 @@ describe('<CardGaleria />', () => {
   const img = 'aire.svg';
   const descript = "Producto Prueba";
 
-  test('Primer SnapShot:<CardGaleria />', () => {
+  test('Primer SnapShot: <CardGaleria />', () => {
     const wrapper = shallow( <CardGaleria src={img} descripcion={descript} precio={1000} id="01k2021" marca="Marca01" />);
     expect(wrapper).toMatchSnapshot();
   });

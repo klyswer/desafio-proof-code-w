@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Exc404 /> Primer SnapShot: <Exc404 /> 1`] = `
+<Fragment>
+  <h1>
+    Not found 404
+  </h1>
+</Fragment>
+`;
