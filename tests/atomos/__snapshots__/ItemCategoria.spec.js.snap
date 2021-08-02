@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemCategoria /> Primer SnapShot 1`] = `
+<div
+  className="item_default_categoria false"
+>
+  <div
+    className="contenedor_elm_categoria"
+  >
+    <div
+      className="icon_categoria"
+    >
+      <img
+        alt="Perfumeria"
+        src="/images/aire.svg"
+      />
+    </div>
+    <div
+      className="texto_categoria"
+    >
+      Perfumeria
+    </div>
+  </div>
+</div>
+`;

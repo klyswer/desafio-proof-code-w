@@ -15,7 +15,7 @@ const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
           <div className="container_card_texto">
             <div className="caja_texto_cards">
               <strong>{`${marca} `}</strong> 
-              <span className="">{descripcion}</span>
+              <span className="descrip_span">{descripcion}</span>
             </div>
           </div>
 
@@ -36,6 +36,9 @@ const CardGaleria = ({src,descripcion,precio,id,marca,agregarProducto}) => {
   );
 };
 
+CardGaleria.defaultProps = {
+  agregarProducto:()=>null
+}
 
 CardGaleria.propTypes = {
   src:PropTypes.string.isRequired,
@@ -43,7 +46,7 @@ CardGaleria.propTypes = {
   precio:PropTypes.number.isRequired,
   id:PropTypes.string.isRequired,
   marca:PropTypes.string.isRequired,
-  agregarProducto: PropTypes.func.isRequired
+  agregarProducto: PropTypes.func
 };
 
 
