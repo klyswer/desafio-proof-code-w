@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemPromocion /> Primer SnapShot: <ItemPromocion /> 1`] = `
+<div
+  className="promocion_container"
+>
+  <span>
+    Agrega 
+  </span>
+  <strong>
+    CLP 140
+  </strong>
+  <span>
+     más en productos Marca02 y aprovecha un descuento total de 
+  </span>
+  <strong>
+    CLP 100
+  </strong>
+  <span>
+     en tu compra!
+  </span>
+</div>
+`;
