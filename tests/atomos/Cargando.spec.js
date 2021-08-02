@@ -21,17 +21,13 @@ describe('<Cargando />', () => {
     expect(mensajeEsperado).toBe(mensaje);
   });
 
-  test('Caso prueba 2: validación de "svg" en componente.', () => {
-    const mensajeEsperado = wrapper.find('img').prop('src'); 
-    // expect(mensajeEsperado).toEqual('/icon.svg');
-  });
 
-  test('Caso prueba 3: validación de "girando" en componente agrega la clase "anim_girar".', () => {
+  test('Caso prueba 2: validación de "girando" en componente agrega la clase "anim_girar".', () => {
     const mensajeEsperado = wrapper.find('img').prop('className'); 
     expect(mensajeEsperado.includes('anim_girar')).toBeTruthy();
   });
 
-  test('Caso prueba 4: validación de "css" en componente agrega la clase "anim_girar".', () => {
+  test('Caso prueba 3: validación de "css" en componente agrega la clase "anim_girar".', () => {
     const cssEsperado = wrapper.find('.container').prop('className'); 
     expect(cssEsperado.includes(css)).toBeTruthy();
   });

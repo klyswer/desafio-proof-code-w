@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemTotal /> Primer SnapShot: <ItemTotal /> 1`] = `
+<div
+  className="total_container"
+>
+  <div
+    className="total_title"
+  >
+    <strong>
+      Total a pagar
+    </strong>
+  </div>
+  <div
+    className="total_value"
+  >
+    <strong>
+      CLP 960
+    </strong>
+  </div>
+</div>
+`;
