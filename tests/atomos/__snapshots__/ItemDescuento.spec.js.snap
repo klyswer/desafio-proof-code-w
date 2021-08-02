@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemDescuento /> Primer SnapShot: <ItemDescuento /> 1`] = `
+<Fragment>
+  <div
+    className="promo_aplicada_container"
+  >
+    <div
+      className="promo_title"
+    >
+      Descuento por marca
+    </div>
+    <div
+      className="promo_title"
+    >
+      -CLP 100
+    </div>
+  </div>
+  <div
+    className="promo_descript"
+  >
+    <span>
+      * Se aplicó un descuento de 
+    </span>
+    <strong>
+      CLP 100
+    </strong>
+    <span>
+       por haber comprado al menos 
+    </span>
+    <strong>
+      CLP 150
+    </strong>
+    <span>
+       en productos Marca01!
+    </span>
+  </div>
+</Fragment>
+`;

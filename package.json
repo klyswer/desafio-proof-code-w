@@ -90,9 +90,21 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "jest": {
+    "collectCoverage": true,
+    "coverageThreshold":{
+      "global":{
+        "branches":60,
+        "fuctions":60,
+        "lines": 60,
+        "statements":60
+      }
+    },
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/serviceWorker.js",
+      "!**/index.js"
     ],
     "resolver": "jest-pnp-resolver",
     "setupFiles": [

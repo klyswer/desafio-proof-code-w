@@ -34,6 +34,8 @@ Open [http://localhost:3000](http://localhost:3000) desde la ruta podrás ver la
 ### CORRER LOS TEST UNITARIOS: 
 `npm test`
 
+`npm test --coverage`
+
 Este comando te permitirá ejecutar los test unitarios.<br>
 
 ### DESPLEGAR VERSIÓN PARA PRODUCCIÓN:
