@@ -4,10 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons'
 import BarraBusqueda from "../../atomos/barraBusqueda/BarraBusqueda";
-import ItemHeader from "../../atomos/itemHeader.jsx/ItemHeader";
+import ItemHeader from "../../atomos/itemHeader/ItemHeader";
 import { verCarritoAction } from "../carrito/CarritoAction";
 import './Header.css';
-
 
 
 const Header = ({realizarBusqueda,reanudarLista,isFetchLista=[]}) => {

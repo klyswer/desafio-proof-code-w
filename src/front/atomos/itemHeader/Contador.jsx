@@ -11,7 +11,7 @@ const Contador = ({number}) => {
 }
 
 Contador.defaultProps = {
-  number:'0',
+  number:0,
 }
 
 Contador.propTypes = {

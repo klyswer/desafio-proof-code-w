@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemSelect /> Primer SnapShot: <ItemSelect /> 1`] = `
+<div
+  className="item_default_select"
+>
+  <div
+    className="contenedor_item_select"
+  >
+    <div
+      className="icon_product"
+    >
+      <div
+        className="walmart_cantidad_item"
+      >
+        1
+      </div>
+      <img
+        alt="Elm 1"
+        src="https://aire.cl"
+      />
+    </div>
+    <div
+      className="descript_product"
+    >
+      <div
+        className=""
+      >
+        <strong>
+          Marca01
+        </strong>
+      </div>
+      <div
+        className=""
+      >
+        Elm 1
+      </div>
+      <div
+        className=""
+      >
+        <strong>
+          Cantidad: 1
+        </strong>
+      </div>
+    </div>
+    <div
+      className="precio_product"
+    >
+      <div>
+        <strong>
+          CLP 1,000
+        </strong>
+      </div>
+      <button
+        id="Marca01"
+        name="kdi293dl"
+        onClick={[Function]}
+        type="button"
+      >
+        Eliminar
+      </button>
+    </div>
+  </div>
+</div>
+`;

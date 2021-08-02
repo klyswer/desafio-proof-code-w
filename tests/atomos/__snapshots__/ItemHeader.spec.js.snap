@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemHeader /> Primer SnapShot: <ItemHeader /> 1`] = `
+<div
+  className="nav-item "
+>
+  <button
+    className="nav-link default_btn_header "
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="contenido_btn"
+    >
+      <span />
+      boton
+    </div>
+  </button>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FiltroIzq /> Primer SnapShot: <FiltroIzq /> 1`] = `
+<div
+  className="contenedor_filtro"
+>
+  <h5
+    className="filtro_galeria"
+  >
+    Filtro de prueba
+  </h5>
+  <div
+    key="1krp"
+  >
+    Marca1
+    <span>
+       Datos
+    </span>
+  </div>
+</div>
+`;

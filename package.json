@@ -79,6 +79,7 @@
     "react-dev-utils": "^8.0.0",
     "react-test-renderer": "^16.13.1",
     "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.4",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
@@ -91,12 +92,12 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageThreshold":{
-      "global":{
-        "branches":60,
-        "fuctions":60,
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "fuctions": 60,
         "lines": 60,
-        "statements":60
+        "statements": 60
       }
     },
     "collectCoverageFrom": [

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemTipoEntrega /> Primer SnapShot: <ItemSelect /> 1`] = `
+<div
+  className="item_tipo_entrega border_blue"
+>
+  <span
+    className="img_entrega bg_img_blue"
+  >
+    <img
+      alt="icon-delivery"
+      src="/images/despacho-icon.svg"
+    />
+  </span>
+  <span
+    className="text_entrega bg_img_blue"
+  >
+    retiro
+  </span>
+</div>
+`;
